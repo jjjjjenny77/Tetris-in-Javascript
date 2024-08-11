@@ -1,0 +1,105 @@
+#tetris{ 
+	position:fixed;
+	margin: 10px 250px;
+}
+
+body {
+  display: fixed;
+  align-items: center;
+  justify-content: center;
+  background-image: url("淡粉上櫻花.jpg");
+}
+
+.info {
+	width: 200px;
+	position:fixed;
+	top: 100px;
+	left: 1000px;
+	border: 1px solid black;
+	text-indent: 0.1em;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: #F0D4FC;
+}
+
+h2 {
+  text-shadow: 1px 1px white, -1px -1px #444;
+}
+
+h3 {
+  border: black 4px double;
+  padding: 10px 15px 10px 15px;
+  border-radius: 20px;
+}
+
+#start-button {
+  position: relative;
+  background-color: rgb(177, 153, 223);
+  border: none;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 10px;
+  width: 130px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+#start-button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+#start-button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.intro {
+  width: 75%;
+}
+
+.keyBoard0 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 0 20px 0;
+}
+
+.keyBoard1 {
+  display: flex;
+  justify-content: center;
+}
+
+.keyBoard1 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+
+.keyBoard1 p {
+  margin-top: 5px;
+}
+
+.intro button {
+  height: 35px;
+  width: 35px;
+}
+
+.keyBoard0 button {
+  width: 70px;
+}
